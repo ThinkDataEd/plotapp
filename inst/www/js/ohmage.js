@@ -173,7 +173,7 @@ oh.call = function(path, data, datafun){
 		} else {
 			datafun(rsptxt);
 		}
-	}).error(function(){
+	}).fail(function(){
 		alert("Fail: " + path + ": " + myrequest.status + "\n\n" + myrequest.responseText)
 	});
 
